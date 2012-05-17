@@ -1,0 +1,50 @@
+<div class="banner">
+  {dede:myad name='top-banner'/}
+</div>
+<div class="banner">
+  {dede:myad name='top-banner2'/}
+</div>
+<div class="banner" id="loginForm">
+	<form name="userlogin" action="{dede:global.cfg_memberurl/}/index_do.php" method="POST">
+		<input type="hidden" name="fmdo" value="login" />
+		<input type="hidden" name="dopost" value="login" />
+		<input type="hidden" name="keeptime" value="604800" />
+		<table>
+		<tr>
+		<td>
+		用户名：<input type="text" value="" name="username"/>
+		</td>
+		<td>
+		&nbsp;密码：<input type="password" value="" name="password"/>
+		</td>
+		<td>
+		&nbsp;验证码：<img src="{dede:global.cfg_cmsurl/}/include/vdimgck.php" height="15" />
+		</td>
+		<td>
+		<input type="submit" value="登录"/>  &nbsp;
+		</td>
+		<td>
+		<a href="{dede:global.cfg_memberurl/}/index_do.php?fmdo=user&dopost=regnew" target="_blank">注册</a>  &nbsp;<a href="{dede:global.cfg_memberurl/}/resetpassword.php" target="_blank"> 忘记密码</a> &nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://www.zggcz.com/plus/guestbook.php" target="_blank">在线留言</a> | <a  href='#' onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.zgghw.org');">设为首页</a> 
+		| <a href="#">简体版</a>
+		| <a href="#">繁体版</a>
+		| <a href="#">英文版</a>
+		</td>
+		</tr>
+		</table>
+	 </form>
+</div>
+
+<div class="nav">
+<ul>
+	{dede:channel type='top' row='14'}
+		<li><a href='[field:typeurl/]' [field:rel/] target='_blank'>[field:typename/]</a></li>
+	{/dede:channel}
+	<div class="clearfix"></div>
+</ul>
+</div>
+<div class="clearfix"></div>
+
+
+
+

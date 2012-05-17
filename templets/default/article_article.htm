@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/} - {dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="/css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
+<script src="/js/flowplayer-3.2.6.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="layout">
+  {dede:include filename="_header.htm"/}
+  <div class="mb6">
+    <div class="place"> <strong>当前位置:</strong> {dede:field name='position'/} </div>
+    <div class="mainBox box">
+      <div class="viewbox">
+        <div class="title">
+          <strong>{dede:field.title/}</strong>
+        </div>
+        <div class="info mb6">
+          时间:{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}
+          来源:{dede:field.source/} 
+          作者:{dede:field.writer/}
+        </div>
+		<div class="videoPlayer2 hide mb6" id="player1div">
+          <a
+      			 href="{dede:field.flv_url/}"
+      			 style="display:block; width:600px; height:450px"  
+      			 id="articleplayer"> 
+      		</a>
+      		<script>
+      			flowplayer("articleplayer", "/images/flowplayer-3.2.7.swf",  {
+            	clip: {
+            		autoPlay: false, 
+            		autoBuffering: false
+            	}
+            });
+      		</script>
+        </div>
+        <div class="videoPlayer2 hide mb6" id="player2div">
+          {dede:field.video_code/}
+        </div>
+        <script type="text/javascript">
+          var player1 = '{dede:field.flv_url/}';
+          if(player1 != ""){
+            $("#player1div").show();
+          }
+          var player2 = '{dede:field.video_code/}';
+          if(player2 != ""){
+            $("#player2div").show();
+          }
+        </script>
+        <div class="text">
+          {dede:field.body/}
+          <div>
+            　　(责任编辑：{dede:adminname/})
+          </div>
+        </div>
+        <div class="textaction">
+          <div>{dede:prenext get='pre'/}</div>
+          <div>{dede:prenext get='next'/}</div>
+        </div>
+      </div>
+    </div>
+    {dede:include filename="_sider.htm"/}
+    <div class="clearfix"></div>
+  </div>
+  {dede:include filename="_footer.htm"/}
+</div>
+
+</body>
+</html>

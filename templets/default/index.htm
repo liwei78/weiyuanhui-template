@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="/css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
+<script src="/js/flowplayer-3.2.6.min.js" type="text/javascript"></script>
+<script src="/js/marquee.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#marquee').kxbdMarquee({direction:'left',isEqual:false,scrollDelay:80});
+		$('#marquee2').kxbdMarquee({direction:'left',isEqual:false,scrollDelay:80});
+		$('#scrollNews').kxbdMarquee({direction:'up',isEqual:false,scrollDelay:80});
+	});
+</script>
+</head>
+<body>
+<div class="layout">
+  {dede:include filename="_header.htm"/}
+  {dede:include filename="_block1.htm"/}
+  {dede:include filename="_footer.htm"/}
+</div>
+
+</body>
+</html>
