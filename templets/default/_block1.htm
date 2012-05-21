@@ -37,7 +37,7 @@
 				</script>
 			</div>
 		</div>
-		<div class="box" style="height: 160px;">
+		<div class="box" style="height: 154px;">
 			<div class="boxTitle">
 				<strong><a href="/html/jigourenzheng/" target="_blank">古镇发展</a></strong>
 			</div>
@@ -67,7 +67,7 @@
 			</ul>
 			</div>
 		</div>
-		<div class="box" style="height: 160px;">
+		<div class="box" style="height: 154px;">
 			<div class="boxTitle">
 				<strong><a href="/html/xiangmufuwu" target="_blank">项目服务</a></strong>
 			</div>
@@ -85,7 +85,6 @@
 	<div class="rightColumn">
 		<div class="box mb6" style="height: 260px;">
 			<div class="boxTitle"><strong><a href="/html/jigoujianjie/" target="_blank">机构简介</a></strong></div>
-			<div style="height: 6px;">&nbsp;</div>
 			<div class="boxList" style="height:210px">
 				<div id="structure">
 					{dede:myad name='zuzhijigou'/}[<a href="/html/jigoujianjie/" target="_blank">详情</a>]
@@ -93,7 +92,7 @@
 				<div class="structure_pic">{dede:myad name='pic1'/}</div>
 			</div>
 		</div>
-		<div class="box" style="height: 160px;">
+		<div class="box" style="height: 154px;">
 			<div class="boxTitle">
 				<strong><a href="/html/zhuanjiatuandui/" target="_blank">专家团队</a></strong>
 			</div>
@@ -133,19 +132,19 @@
     
 <div class="mb6"><!-- 中间栏 -->
 	<div class="wideLeftColumn">
-		<div class="box" style="height:290 px;"><!-- 古镇文化 -->
+		<div class="box" style="height:180px; margin-bottom:6px;"><!-- 古镇文化 -->
 			<div class="boxTitle">
 				<strong><a href="/html/guzhenwenhua/" target="_blank">古镇文化</a></strong>
 			</div>
-			<div style="height:150px">
+			<div style="height:150px; padding-top:4px;">
 				<div class="guzhenwenhua">
 					<div class="block1">
-						<div class="picList1">
-							<div class="pic">
+						<div class="pic left">
 							{dede:arclist typeid='6' type='image' row='1' titlelen='100' type='image'}
 							<a href="[field:arcurl/]" target="_blank" ><img src="[field:litpic/]" title="[field:title/]" alt="" width="200" height="120" /></a>
 							{/dede:arclist}
-							</div>
+						</div>
+						<div class="picList1">
 							<div class="boxList list">
 								<ul class="ico">
 								{dede:arclist typeid='6' row='6' titlelen='100' limit='0,6'}
@@ -154,6 +153,7 @@
 								</ul>
 							</div>
 						</div>
+						<div class="clearfix"></div>
 					</div>
 					<div class="block2">
 						<div class="boxList list">
@@ -164,11 +164,10 @@
 							</ul>
 						</div>
 					</div>    
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
-	
-		<div class="clearfix" style="height:10px"></div>
 		
 		<div class="box" style="height:290 px;"><!-- 古镇推广 -->
 			<div class="boxTitle">
@@ -196,11 +195,12 @@
 		  <strong><a href="/html/guzhenshipin/" target="_blank">古镇视频</a></strong>
 		</div>	
 		<div class="boxList" style="height: 315px;">
+			<div style="margin-top:4px; margin-left: 6px;">
 			<script language='javascript'>
 				linkarr = new Array();
 				picarr = new Array();
 				textarr = new Array();
-				var swf_width=224;
+				var swf_width=230;
 				var swf_height=200;
 				var files = "";
 				var links = "";
@@ -229,9 +229,10 @@
 				document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'">');
 				document.write('<embed src="/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>'); 
 			</script>
+			</div>
 			<ul class="videoico">
 				{dede:arclist typeid='8' row='4' titlelen='50'}
-				<li>[field:title/] [<a href="[field:arcurl/]" target="_blank">详细</a>]</li>
+				<li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
 				{/dede:arclist}
 			</ul>
 		</div>

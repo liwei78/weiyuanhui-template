@@ -163,6 +163,7 @@ input,select,button {
 }
 .nav ul li a {
   font-size: 14px;
+
 }
 .action {
   color: #993333;
@@ -314,7 +315,7 @@ input,select,button {
   background: url(/images/ico.jpg) no-repeat 4px 10px;
 }
 .box .boxList ul.videoico {
-  height: 176px;
+  
   margin: 6px;
 }
 .box .boxList ul.videoico li {
@@ -361,9 +362,8 @@ input,select,button {
 .guzhenwenhua .block1 {
   float: left;
   width: 390px;
-  margin-top: 6px;
-  padding-right: 6px;
   border-right: 1px dashed #666666;
+  padding-right: 6px;
 }
 .guzhenwenhua .block2 {
   float: right;
@@ -385,7 +385,6 @@ input,select,button {
 .guzhenwenhua .block1 .list {
   float: right;
   width: 180px;
-  height: 120px;
 }
 
 .renwufengcai {
@@ -698,8 +697,7 @@ input,select,button {
 }
 #structure{
 	line-height: 22px;
-	padding: 10px;
-	margin-bottom: 10px;
+	padding: 6px 10px;
 }
 #structure p{
 	margin-top:20px;
